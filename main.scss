@@ -1,0 +1,47 @@
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin navFrame {
+  width: 100%;
+  max-width: 60rem;
+}
+
+header {
+  @include navFrame;
+  ul {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+}
+
+footer {
+  @include navFrame;
+  ul {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+main {
+  @include navFrame;
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left {
+      max-width: 30rem;
+    }
+
+    .right {
+    }
+  }
+}
